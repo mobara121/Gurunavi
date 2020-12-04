@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {makeStyles, createStyles} from '@material-ui/core';
+import {makeStyles, createStyles, Hidden} from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles(()=>
@@ -21,14 +21,34 @@ const useStyles = makeStyles(()=>
             height: '48px',
             fontWeight: '800'
         },
-        image:{
-            height:'244px',
-            lineHeight:'244px',
+        slide:{
+            position: 'relative',
             width: '244px',
-            margin:'auto 0'
+            height: '244px',
+            overflow: 'hidden',
+            margin:'0 auto'
         },
+        image:{
+            position: 'absolute',
+            top:'50%',
+            transform: 'translate(-50%, -50%)',
+            width: '100%',
+            margin:'auto 0',
+        },
+        
         btn:{
-            margin:'15px auto'
+            margin:'15px auto',
+            
+        },
+        btnText:{
+            fontWeight: '400',
+            color: '#fff',
+            backgroundColor: '#e50914',
+            borderRadius: '5px',
+            borderColor: '#e50915',
+            '&:hover':{
+                backgroundColor:'#df6767'
+              }
         },
         details:{
             textAlign:'left',
@@ -52,12 +72,15 @@ function Restaurants(props){
 
     return(
         <div>
+            
             <Card className={classes.res}>
                 <div className={classes.container}>
                     <p className={classes.name}>{props.name}</p>            
 
-                    <div><img className={classes.image} src={props.image.shop_image1}  alt="new" /></div>
-                    <span className={classes.btn}><button onClick={handleClick}>お店の詳細をみる　⇩</button></span>
+                    <div className={classes.slide}>
+                        <img className={classes.image} src={props.image.shop_image1}  alt="new" />
+                    </div>
+                    <span className={classes.btn}><button  className={classes.btnText}onClick={handleClick}>お店の詳細をみる　⇩</button></span>
                     {open? 
                         <div className={classes.details}>
                             <p>{props.pr.pr_short}</p>
@@ -67,7 +90,7 @@ function Restaurants(props){
                         </div>
                     : ""}
                 </div>
-            </Card>
+            </Card> 
         </div>
     )
 }
