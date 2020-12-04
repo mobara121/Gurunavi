@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Gurunavi/static/css/main.072ced85.chunk.css",
+    "main.js": "/Gurunavi/static/js/main.9427e216.chunk.js",
+    "main.js.map": "/Gurunavi/static/js/main.9427e216.chunk.js.map",
+    "runtime-main.js": "/Gurunavi/static/js/runtime-main.2371f14b.js",
+    "runtime-main.js.map": "/Gurunavi/static/js/runtime-main.2371f14b.js.map",
+    "static/js/2.f8b19c4c.chunk.js": "/Gurunavi/static/js/2.f8b19c4c.chunk.js",
+    "static/js/2.f8b19c4c.chunk.js.map": "/Gurunavi/static/js/2.f8b19c4c.chunk.js.map",
+    "static/js/3.4615861c.chunk.js": "/Gurunavi/static/js/3.4615861c.chunk.js",
+    "static/js/3.4615861c.chunk.js.map": "/Gurunavi/static/js/3.4615861c.chunk.js.map",
+    "index.html": "/Gurunavi/index.html",
+    "static/css/main.072ced85.chunk.css.map": "/Gurunavi/static/css/main.072ced85.chunk.css.map",
+    "static/js/2.f8b19c4c.chunk.js.LICENSE.txt": "/Gurunavi/static/js/2.f8b19c4c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Gurunavi/static/media/marble.96533008.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2371f14b.js",
+    "static/js/2.f8b19c4c.chunk.js",
+    "static/css/main.072ced85.chunk.css",
+    "static/js/main.9427e216.chunk.js"
+  ]
+}
